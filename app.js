@@ -17,13 +17,11 @@ form.addEventListener('submit', event => {
 
     userAnswers.forEach((userAnswer, index) => {
         const isAnswerValid = userAnswer === correctAnswers[index]
-        
+
         if (isAnswerValid) {
             score += 20
-
         }
     })
-
 
     scoreAlert.style.display = "inline";
     scoreAlert.textContent = `Sua pontuação foi: ${score}`
