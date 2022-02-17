@@ -16,8 +16,11 @@ form.addEventListener('submit', event => {
     let score = 0
 
     userAnswers.forEach((userAnswer, index) => {
-        if (userAnswer === correctAnswers[index]) {
+        const isAnswerValid = userAnswer === correctAnswers[index]
+        
+        if (isAnswerValid) {
             score += 20
+
         }
     })
 
