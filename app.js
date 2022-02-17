@@ -25,6 +25,7 @@ form.addEventListener('submit', event => {
 
     scoreAlert.style.display = "inline";
     scoreAlert.textContent = `Sua pontuação foi: ${score}`
+
 })
 
 buttonReset.addEventListener('click', () => {
